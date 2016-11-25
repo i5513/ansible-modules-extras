@@ -71,11 +71,11 @@ options:
         version_added: '2.3'
     host_groups:
         description:
-            - List of host groups the host is part of.
+            - List of host groups the host is part of. It will remove the membership from all groups which are not on this list.
         required: false
     link_templates:
         description:
-            - List of templates linked to the host.
+            - List of templates linked to the host. It will remove the linked templates which are not on this list
         required: false
         default: None
     inventory_mode:
